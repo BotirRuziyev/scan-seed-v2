@@ -25,7 +25,7 @@ const coins = [
   },
 ];
 const Home = () => {
-  const [selectedBtn, setSelectedBtn] = useState(null);
+  const [selectedBtn, setSelectedBtn] = useState(1);
   const [scanningBtn, setScanningBtn] = useState(null);
   const coinBtn = (buttonId) => {
     setSelectedBtn(buttonId);

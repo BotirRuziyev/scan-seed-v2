@@ -138,22 +138,25 @@
                     transition: 0.3s;
                 }
                 &:nth-child(1) {
-                    border-color: #ffa220;
+                    border-color: #1c1c1c;
                 }
                 &:nth-child(2) {
-                    border-color: #9d9d9d;
+                    border-color: #1c1c1c;
                 }
                 &:nth-child(3) {
-                    border-color: #08c;
+                    border-color: #1c1c1c;
                 }
                 &:nth-child(1).active {
                     box-shadow: 0 0 4px #ffa220;
+                    border-color: #ffa220;
                 }
                 &:nth-child(2).active {
                     box-shadow: 0 0 4px #9d9d9d;
+                    border-color: #9d9d9d;
                 }
                 &:nth-child(3).active {
                     box-shadow: 0 0 4px #08c;
+                    border-color: #08c;
                 }
             }
             &-item.active {
