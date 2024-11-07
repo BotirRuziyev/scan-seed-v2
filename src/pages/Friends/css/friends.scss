@@ -1,0 +1,233 @@
+.friends {
+    padding-bottom: 88px;
+    &-in {
+        padding: 0 17px;
+        @media (max-width: 360px) {
+            padding: 0 10px;
+        }
+        .friends-home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 22px;
+            .home-img {
+                margin-bottom: 18px;
+                margin-top: -13px;
+            }
+            .home-title {
+                font-family: var(--second-family);
+                font-weight: 600;
+                font-size: 22px;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 12px;
+            }
+            .home-description {
+                max-width: 355px;
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 131%;
+                text-align: center;
+                color: #7d7c82;
+            }
+        }
+        .invite-friends {
+            margin-bottom: 32px;
+            .invite-friends__in {
+                background: #1c1c1c;
+                border-radius: 14px;
+                .invite-friends__list {
+                    margin-bottom: 24px;
+                    .list-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        padding: 15px 0 0 13px;
+                        .icon {
+                            border-radius: 6px;
+                            min-width: 22px;
+                            min-height: 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                        &:nth-child(1) {
+                            .icon {
+                                background: #007aff;
+                            }
+                        }
+                        &:nth-child(2) {
+                            .icon {
+                                background: #ff9500;
+                            }
+                        }
+                        &:last-child {
+                            .item-body {
+                                border: 0;
+                            }
+                        }
+                        .item-body {
+                            padding: 0 29px 15px 0;
+                            border-bottom: 1px solid #c8c7cb;
+                            @media (max-width: 360px) {
+                                padding: 0 16px 15px 0;
+                            }
+                            .body-title {
+                                font-family: var(--second-family);
+                                font-weight: 600;
+                                font-size: 15px;
+                                color: #fff;
+                                margin-bottom: 2px;
+                                span {
+                                    color: #007aff;
+                                }
+                            }
+                            .body-description {
+                                font-family: var(--second-family);
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #7d7c82;
+                            }
+                        }
+                    }
+                }
+                .invite-friends__btn__wrapper {
+                    display: flex;
+                    gap: 6px;
+                    padding: 0 16px 12px;
+                    margin-bottom: 9px;
+                    .invite-friends__btn {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 12px;
+                        background: #007aff;
+                        font-family: var(--second-family);
+                        font-weight: 600;
+                        font-size: 15px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                    .copy-btn {
+                        background: #0f0f0f;
+                        border-radius: 12px;
+                        min-width: 50px;
+                        min-height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid #d9ebff;
+                        box-shadow: inset 0 0 0 50px #d9ebff;
+                        transition: 0.7s;
+                    }
+                    .copy-btn.active {
+                        border-color: #007aff;
+                        box-shadow: inset 0 0 0 0 #d9ebff;
+                    }
+                }
+            }
+            .invite-friends__bottom {
+                display: flex;
+                align-items: stretch;
+                gap: 10px;
+                .item {
+                    flex: 1 1 0;
+                    background: #1c1c1c;
+                    border-radius: 9px;
+                    padding: 12px 2px;
+                    &:nth-child(2) {
+                        .amound {
+                            color: #007aff;
+                        }
+                        .item-text {
+                            color: #007aff;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .amound {
+                            color: #ff9500;
+                        }
+                        .item-text {
+                            color: #ff9500;
+                        }
+                    }
+                    .amound {
+                        font-family: var(--second-family);
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #34c759;
+                    }
+                    .item-text {
+                        font-family: var(--second-family);
+                        font-weight: 600;
+                        font-size: 10px;
+                        text-align: center;
+                        color: #34c759;
+                    }
+                }
+            }
+        }
+        .your-referrals {
+            .title {
+                padding-left: 16px;
+                margin-bottom: 7px;
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 123%;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+                color: #707579;
+            }
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 4.7px;
+                .list-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    background: #1c1c1c;
+                    border-radius: 16px;
+                    padding: 10px 16px;
+                    .avatar {
+                        border-radius: 100%;
+                        width: 44px;
+                        height: 42px;
+                        background: rgba(67, 120, 255, 0.1);
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .item-body {
+                        .user-name {
+                            font-family: var(--second-family);
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 129%;
+                            color: #fff;
+                        }
+                        .date {
+                            font-family: var(--second-family);
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 133%;
+                            color: #707579;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

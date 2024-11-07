@@ -1,0 +1,109 @@
+@import url("../fonts/Inter/stylesheet.css");
+@import url("../fonts/OpenSans/stylesheet.css");
+@import url("../fonts/SFPro/stylesheet.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../fonts/San-Francisco-Pro/SF-Pro-Rounded-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/San-Francisco-Pro/SF-Pro.ttf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/San-Francisco-Pro/SF-Pro-Text-Medium.otf") format("opentype");
+}
+:root {
+  --font-family: "SF Pro Display", sans-serif;
+  --second-family: "SF Pro Rounded", sans-serif;
+  --third-family: "SF Pro", sans-serif;
+  --font3: "SF Pro Text", sans-serif;
+  --font4: "Open Sans", sans-serif;
+  --font5: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: #0f0f0f;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.main-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-head {
+  padding: 11px 9px;
+}
+.page-head .back-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.03em;
+  color: #007aff;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  padding: 0 10px;
+  visibility: hidden;
+  position: fixed;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: 0.5s;
+}
+.modal-in {
+  max-width: 450px;
+  width: calc(100% - 20px);
+  background: #1c1c1c;
+  border-radius: 14px 14px 0 0;
+  background: url("../img/modal-bg.png");
+  background-size: 100% 100%;
+  padding: 19px 23px 30px;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.5s;
+}
+
+.modal.active {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.49);
+}
+.modal.active .modal-in {
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */
