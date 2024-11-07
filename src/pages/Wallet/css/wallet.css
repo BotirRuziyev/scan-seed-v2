@@ -243,25 +243,25 @@
 .wallet-in .wallet-section__card .card-in .card-item:nth-child(1) .icon {
   background-color: #33adef;
 }
-.wallet-in .wallet-section__card .card-in .card-item:nth-child(1) .item-body .left-block .title span {
+.wallet-in .wallet-section__card .card-in .card-item:nth-child(1) .item-body .left-block .item-body__title span {
   color: #33adef;
 }
 .wallet-in .wallet-section__card .card-in .card-item:nth-child(2) .icon {
   background-color: #32c653;
 }
-.wallet-in .wallet-section__card .card-in .card-item:nth-child(2) .item-body .left-block .title span {
+.wallet-in .wallet-section__card .card-in .card-item:nth-child(2) .item-body .left-block .item-body__title span {
   color: #32c653;
 }
 .wallet-in .wallet-section__card .card-in .card-item:nth-child(3) .icon {
   background-color: #ffc42d;
 }
-.wallet-in .wallet-section__card .card-in .card-item:nth-child(3) .item-body .left-block .title span {
+.wallet-in .wallet-section__card .card-in .card-item:nth-child(3) .item-body .left-block .item-body__title span {
   color: #ffc42d;
 }
 .wallet-in .wallet-section__card .card-in .card-item:nth-child(4) .icon {
   background-color: #f72c4f;
 }
-.wallet-in .wallet-section__card .card-in .card-item:nth-child(4) .item-body .left-block .title span {
+.wallet-in .wallet-section__card .card-in .card-item:nth-child(4) .item-body .left-block .item-body__title span {
   color: #f72c4f;
 }
 .wallet-in .wallet-section__card .card-in .card-item:nth-child(4) .item-body .right-block .bonus {
@@ -377,25 +377,25 @@
 .wallet-in .boost-card .card-in .card-item:nth-child(1) .icon {
   background-color: #33adef;
 }
-.wallet-in .boost-card .card-in .card-item:nth-child(1) .item-body .left-block .title span {
+.wallet-in .boost-card .card-in .card-item:nth-child(1) .item-body .left-block .item-body__title span {
   color: #33adef;
 }
 .wallet-in .boost-card .card-in .card-item:nth-child(2) .icon {
   background-color: #32c653;
 }
-.wallet-in .boost-card .card-in .card-item:nth-child(2) .item-body .left-block .title span {
+.wallet-in .boost-card .card-in .card-item:nth-child(2) .item-body .left-block .item-body__title span {
   color: #32c653;
 }
 .wallet-in .boost-card .card-in .card-item:nth-child(3) .icon {
   background-color: #ffc42d;
 }
-.wallet-in .boost-card .card-in .card-item:nth-child(3) .item-body .left-block .title span {
+.wallet-in .boost-card .card-in .card-item:nth-child(3) .item-body .left-block .item-body__title span {
   color: #ffc42d;
 }
 .wallet-in .boost-card .card-in .card-item:nth-child(4) .icon {
   background-color: #f72c4f;
 }
-.wallet-in .boost-card .card-in .card-item:nth-child(4) .item-body .left-block .title span {
+.wallet-in .boost-card .card-in .card-item:nth-child(4) .item-body .left-block .item-body__title span {
   color: #f72c4f;
 }
 .wallet-in .boost-card .card-in .card-item:nth-child(4) .item-body .right-block .bonus {
