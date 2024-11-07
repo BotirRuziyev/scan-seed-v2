@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./css/friends.css";
-import mailbox from "../../assets/img/mailbox.png";
-import { useNavigate } from "react-router-dom";
+import mailbox from "../../assets/img/mailbox.gif";
+import { Link } from "react-router-dom";
 import back from "../../assets/img/icon/back.svg";
 import star from "../../assets/img/star.svg";
 import copy from "../../assets/img/copy.svg";
 import avatar from "../../assets/img/avatar.svg";
 
 const Friends = () => {
-  const navigate = useNavigate();
   const [openCopy, setCopy] = useState();
 
   const copyClick = () => {
@@ -20,10 +19,10 @@ const Friends = () => {
   return (
     <div className="friends">
       <div className="page-head">
-        <button onClick={() => navigate(-1)} className="back-link">
+        <Link to={"/"} className="back-link">
           <img src={back} alt="" />
           Back
-        </button>
+        </Link>
       </div>
       <div className="friends-in">
         <div className="friends-home">

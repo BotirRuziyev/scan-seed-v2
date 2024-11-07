@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/home.css";
+import Footer from "../../components/Footer";
 
 import avatar from "../../assets/img/avatar.svg";
 import search from "../../assets/img/search.svg";
@@ -140,6 +141,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

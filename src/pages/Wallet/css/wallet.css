@@ -19,6 +19,9 @@
   margin-bottom: 18px;
   margin-top: -13px;
 }
+.wallet-in .wallet-home .home-img img {
+  max-height: 97px;
+}
 .wallet-in .wallet-home .home-title {
   font-family: var(--font-family);
   font-weight: 600;
@@ -215,10 +218,6 @@
 .wallet-in .wallet-section__card .card-head .icon img {
   width: 10px;
   height: 9px;
-}
-.wallet-in .wallet-section__card .card-in {
-  max-height: 207.5px;
-  overflow: auto;
 }
 .wallet-in .wallet-section__card .card-in::-webkit-scrollbar {
   width: 0;

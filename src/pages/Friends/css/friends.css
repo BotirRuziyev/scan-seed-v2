@@ -19,6 +19,9 @@
   margin-bottom: 18px;
   margin-top: -13px;
 }
+.friends-in .friends-home .home-img img {
+  max-height: 97px;
+}
 .friends-in .friends-home .home-title {
   font-family: var(--second-family);
   font-weight: 600;

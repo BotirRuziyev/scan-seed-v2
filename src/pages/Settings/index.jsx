@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./css/settings.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import back from "../../assets/img/icon/back.svg";
 import avatar from "../../assets/img/avatar.svg";
 import search from "../../assets/img/search.svg";
@@ -8,7 +8,6 @@ import next from "../../assets/img/icon/next-link.svg";
 import selected from "../../assets/img/icon/selected.svg";
 
 const Settings = () => {
-  const navigate = useNavigate();
   const [openLang, setLang] = useState(false);
   const langClick = () => {
     setLang(!openLang);
@@ -43,10 +42,10 @@ const Settings = () => {
   return (
     <div className="settings">
       <div className="page-head">
-        <button onClick={() => navigate(-1)} className="back-link">
+        <Link to={"/"} className="back-link">
           <img src={back} alt="" />
           Back
-        </button>
+        </Link>
       </div>
       <div className="settings-in">
         <div className="user-info">

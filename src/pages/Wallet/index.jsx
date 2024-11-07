@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./css/wallet.css";
 import back from "../../assets/img/icon/back.svg";
-import wheel from "../../assets/img/wheel-animation.svg";
+import wheel from "../../assets/img/wheel-animation.gif";
 import star from "../../assets/img/star.svg";
 import star2 from "../../assets/img/star2.svg";
 import robot from "../../assets/img/icon/robot.svg";
@@ -16,9 +15,9 @@ import ethereumeth from "../../assets/img/ethereum-eth.svg";
 import ton from "../../assets/img/coin.svg";
 import coin from "../../assets/img/coin2.svg";
 import ChooseConvenientModal from "../../components/ChooseConvenientModal";
+import { Link } from "react-router-dom";
 
 const Wallet = () => {
-  const navigate = useNavigate();
   useEffect(() => {
     if (window.location.hash) {
       const element = document.querySelector(window.location.hash);
@@ -153,10 +152,10 @@ const Wallet = () => {
   return (
     <div className="wallet">
       <div className="page-head">
-        <button onClick={() => navigate(-1)} className="back-link">
+        <Link to={"/"} className="back-link">
           <img src={back} alt="" />
           Back
-        </button>
+        </Link>
       </div>
       <div className="wallet-in">
         <div className="wallet-home">
@@ -234,12 +233,17 @@ const Wallet = () => {
                         ) : (
                           ""
                         )}
-                        {openSuccessfull.includes(item.id) ? (
-                          <button className="successfully">Successfully</button>
+                        {openSuccessfull.includes(item.id) &&
+                        item.id !== 2 &&
+                        item.id !== 4 ? (
+                          <button className="successfully">
+                            Successfully {item.id}
+                          </button>
                         ) : (
                           ""
                         )}
-                        {openSuccessfull.includes(10) ? (
+                        {openSuccessfull.includes(item.id) &&
+                        (item.id === 2 || item.id === 4) ? (
                           <button className="insufficient-funds">
                             Insufficient funds
                           </button>
