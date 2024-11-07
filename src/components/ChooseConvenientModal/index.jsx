@@ -6,6 +6,7 @@ import bitcoin from "../../assets/img/bitcoin.svg";
 import transactionSearch from "../../assets/img/transaction-search.png";
 const ChooseConvenientModal = ({ modal, updateModal }) => {
   const modalFilter = (filter) => {
+    continueAnim();
     document.querySelectorAll(".modal-in").forEach((e) => {
       if (e.getAttribute("data-filter") === filter) {
         e.classList.add("active");
@@ -115,7 +116,7 @@ const ChooseConvenientModal = ({ modal, updateModal }) => {
               </button>
               <button
                 className="continue-btn"
-                onClick={() => (continueAnim(), modalFilter("transaction"))}
+                onClick={() => modalFilter("transaction")}
               >
                 <span
                   className={

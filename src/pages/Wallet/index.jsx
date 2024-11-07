@@ -16,7 +16,6 @@ import ethereumeth from "../../assets/img/ethereum-eth.svg";
 import ton from "../../assets/img/coin.svg";
 import coin from "../../assets/img/coin2.svg";
 import ChooseConvenientModal from "../../components/ChooseConvenientModal";
-import { doc } from "prettier";
 
 const Wallet = () => {
   const navigate = useNavigate();
